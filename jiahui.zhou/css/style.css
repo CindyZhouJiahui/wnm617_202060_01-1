@@ -1,20 +1,23 @@
+/* ELEMENT RESET */
 
 *,*::before,*::after {
 	box-sizing: border-box;
 }
+
 :root{
-	--color-neutral-light:;
-	--color-neutral-medium:;
-	--color-neutral-dark:;
+	--color-neutral-light:#c1edff;
+	--color-neutral-medium:#8fdcff;
+	--color-neutral-dark:#60c5ff;
 
 	--color-white:#fff;
-	--color-white:#000;
+	--color-black:#000;
 
 	--header-height:3rem;
 	--gap-size:1rem;
+	--container-width:1000px;
 
 	--font-serif:Georgia, "Times New Roman", serif;
-	font-sans: Helvetica; arial, sans-serif;
+	--font-sans: Helvetica; arial, sans-serif;
 }
 
 body{
@@ -33,13 +36,11 @@ h6 {
 }
 
 a{
-	display: inline block;
-	color: inherit;
-	font-weight: bold;
-	text-decoration: none;
+	display:inline-block;
+	color:inherit;
+	font-weight:bold;
+	text-decoration:none;
 }
-
-
 
 
 
@@ -56,7 +57,6 @@ a{
 
 
 
-
 /* layout Classes*/
 
 .display-flex {display: flex;}
@@ -67,25 +67,23 @@ a{
 .flex-stretch { flex: 1 1  auto; }
 .flex-none { flex: none; }
 
+.flex-justify-center { justify-content:center; }
+.flex-align-center { align-items:center; }
 
 
 
-@media (max-width: 1000px ) {
-	.navbar{
-		padding-left: 1em;
-		padding-right: 1em;
-	}
-	}
 
-	@media(max-width: 500px){
-		.navbar.display-flex{
-			display: block;
-		}
-	.navbar .nav li {
-		line-height: calc(var(--header-height) * 0.66);
-	}
-	.navbar.nav
 
+
+/*Components*/
+
+.navbar{
+	background-color: var(--color-neutral-dark);
+	color: var(--color-neutral-light);
+	line-height: var(--header-height);}
+.navbar h1{
+	font-size:1em;
+	margin:0;
 }
 
 

@@ -24,6 +24,7 @@ body{
 	margin: 0;
 	font-size: 100%;
 	font-family:var(--font-sans);
+	background-color: var(--color-neutral-medium);
 }
 
 h1,
@@ -102,6 +103,7 @@ a{
 	padding-left: 1em;
 	padding-right: 1em;
 }
+
 
 
 

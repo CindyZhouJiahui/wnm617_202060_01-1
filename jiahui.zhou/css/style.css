@@ -88,6 +88,28 @@ a{
 
 
 
+.nav ul{
+	list-style-type:none;
+	margin: 0;
+	padding: 0;
+}
+.navbar li:not(:last-child) a {
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+.navbar li:last-child a {
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+
+
+
+
+
+
+
 
 
 

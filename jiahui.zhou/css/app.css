@@ -1,17 +1,117 @@
-body{
-	margin: 0;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>New Project</title>
 
-a{
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 
+	<link rel="stylesheet" href="lib/css/jquery.mobile.structure-1.4.5.min.css">
+	<link rel="stylesheet" href="css/app.css">
 
-}
+	<script src="lib/js/jquery-2.2.4.min.js"></script>
+	<script src="js/app.js"></script>
 
+	<script src="lib/js/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+	
+	<section data-role="page" id="signin-page">
+		<div data-role="main">
+			<form id="signin-form" data-ajax="false" class="center-child">
+				<div class="form-control">
+					<label for="signin-username" class="form-label">Username</label>
+					<input type="text" class="form-input" id="signin-username" placeholder="Type your Username" data-role="none">
+				</div>
+				<div class="form-control">
+					<label for="signin-password" class="form-label">Password</label>
+					<input type="password" class="form-input" id="signin-password" placeholder="Type your Password" data-role="none">
+				</div>
+				<div class="form-control">
+					<input type="submit" class="form-button" value="Sign In" data-role="none">
+					<a href="#recent-page">Navigate</a>
+				</div>
+			</form>
+		</div>
+	</section>
+	<section data-role="page" id="signup-page"></section>
 
+	<section data-role="page" id="recent-page">
+		<div data-role="main">
+			Map
+		</div>
+		<footer data-role="footer">
+			<ul>
+				<!-- li*3>a[href=#] -->
+				<li><a href="#recent-page">Recent</a></li>
+				<li><a href="#list-page">List</a></li>
+				<li><a href="#profile-page">Profile</a></li>
+			</ul>
+		</footer>
+	</section>
+	<section data-role="page" id="list-page">
+		<header data-role="header">
+			<h1>Animal List</h1>
+			<ul>
+				<li class="flex-stretch"></li>
+				<li class="flex-none">
+					<a href="#">&plus;</a>
+				</li>
+			</ul>
+		</header>
+		<div data-role="main">
+			<!-- ul>li*10>a[href=#market-profile-page]>{Market $} -->
+			<ul>
+				<li><a href="#market-profile-page">market 1</a></li>
+				<li><a href="#market-profile-page">market 2</a></li>
+				<li><a href="#market-profile-page">market 3</a></li>
+				<li><a href="#market-profile-page">market 4</a></li>
+				<li><a href="#market-profile-page">market 5</a></li>
+				<li><a href="#market-profile-page">market 6</a></li>
+				<li><a href="#market-profile-page">market 7</a></li>
+				<li><a href="#market-profile-page">market 8</a></li>
+				<li><a href="#market-profile-page">market 9</a></li>
+				<li><a href="#market-profile-page">market 10</a></li>
+			</ul>
+		</div>
+		<footer data-role="footer">
+			<ul>
+				<!-- li*3>a[href=#] -->
+				<li><a href="#recent-page">Recent</a></li>
+				<li><a href="#list-page">List</a></li>
+				<li><a href="#profile-page">Profile</a></li>
+			</ul>
+		</footer>
+	</section>
+	<section data-role="page" id="market-profile-page">
+		<header data-role="header">
+			<h1>Market Profile</h1>
+			<ul>
+				<li class="flex-none">
+					<a href="#" data-rel="back">Back</a>
+				</li>
+			</ul>
+		</header>
+		<div data-role="main">
+			Cool Animal
+		</div>
+	</section>
+	<section data-role="page" id="profile-page">
+		<div data-role="main">
+			User Profile
+		</div>
+		<footer data-role="footer">
+			<ul>
+				<!-- li*3>a[href=#] -->
+				<li><a href="#recent-page">Recent</a></li>
+				<li><a href="#list-page">List</a></li>
+				<li><a href="#profile-page">Profile</a></li>
+			</ul>
+		</footer>
+	</section>
 
-
-
-
+</body>
+</html>
 
 
 

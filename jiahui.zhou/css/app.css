@@ -1,117 +1,99 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>New Project</title>
+/* ELEMENT RESETS */
 
-	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+*,*::before,*::after {
+	box-sizing:border-box;
+}
 
-	<link rel="stylesheet" href="lib/css/jquery.mobile.structure-1.4.5.min.css">
-	<link rel="stylesheet" href="css/app.css">
+:root {
+	--color-neutral-light: #eaeeef;
+   --color-neutral-medium: #9aa2a4;
+   --color-neutral-dark: #363c3e;
 
-	<script src="lib/js/jquery-2.2.4.min.js"></script>
-	<script src="js/app.js"></script>
+	--color-main-light: ##65c8D0;
+	--color-main-medium: #29abe2;
+	--color-main-dark: ##0d56f2;
 
-	<script src="lib/js/jquery.mobile-1.4.5.min.js"></script>
-</head>
-<body>
-	
-	<section data-role="page" id="signin-page">
-		<div data-role="main">
-			<form id="signin-form" data-ajax="false" class="center-child">
-				<div class="form-control">
-					<label for="signin-username" class="form-label">Username</label>
-					<input type="text" class="form-input" id="signin-username" placeholder="Type your Username" data-role="none">
-				</div>
-				<div class="form-control">
-					<label for="signin-password" class="form-label">Password</label>
-					<input type="password" class="form-input" id="signin-password" placeholder="Type your Password" data-role="none">
-				</div>
-				<div class="form-control">
-					<input type="submit" class="form-button" value="Sign In" data-role="none">
-					<a href="#recent-page">Navigate</a>
-				</div>
-			</form>
-		</div>
-	</section>
-	<section data-role="page" id="signup-page"></section>
+   --color-white: #fff;
+   --color-black: #000;
 
-	<section data-role="page" id="recent-page">
-		<div data-role="main">
-			Map
-		</div>
-		<footer data-role="footer">
-			<ul>
-				<!-- li*3>a[href=#] -->
-				<li><a href="#recent-page">Recent</a></li>
-				<li><a href="#list-page">List</a></li>
-				<li><a href="#profile-page">Profile</a></li>
-			</ul>
-		</footer>
-	</section>
-	<section data-role="page" id="list-page">
-		<header data-role="header">
-			<h1>Animal List</h1>
-			<ul>
-				<li class="flex-stretch"></li>
-				<li class="flex-none">
-					<a href="#">&plus;</a>
-				</li>
-			</ul>
-		</header>
-		<div data-role="main">
-			<!-- ul>li*10>a[href=#market-profile-page]>{Market $} -->
-			<ul>
-				<li><a href="#market-profile-page">market 1</a></li>
-				<li><a href="#market-profile-page">market 2</a></li>
-				<li><a href="#market-profile-page">market 3</a></li>
-				<li><a href="#market-profile-page">market 4</a></li>
-				<li><a href="#market-profile-page">market 5</a></li>
-				<li><a href="#market-profile-page">market 6</a></li>
-				<li><a href="#market-profile-page">market 7</a></li>
-				<li><a href="#market-profile-page">market 8</a></li>
-				<li><a href="#market-profile-page">market 9</a></li>
-				<li><a href="#market-profile-page">market 10</a></li>
-			</ul>
-		</div>
-		<footer data-role="footer">
-			<ul>
-				<!-- li*3>a[href=#] -->
-				<li><a href="#recent-page">Recent</a></li>
-				<li><a href="#list-page">List</a></li>
-				<li><a href="#profile-page">Profile</a></li>
-			</ul>
-		</footer>
-	</section>
-	<section data-role="page" id="market-profile-page">
-		<header data-role="header">
-			<h1>Market Profile</h1>
-			<ul>
-				<li class="flex-none">
-					<a href="#" data-rel="back">Back</a>
-				</li>
-			</ul>
-		</header>
-		<div data-role="main">
-			Cool market
-		</div>
-	</section>
-	<section data-role="page" id="profile-page">
-		<div data-role="main">
-			User Profile
-		</div>
-		<footer data-role="footer">
-			<ul>
-				<!-- li*3>a[href=#] -->
-				<li><a href="#recent-page">Recent</a></li>
-				<li><a href="#list-page">List</a></li>
-				<li><a href="#profile-page">Profile</a></li>
-			</ul>
-		</footer>
-	</section>
+	--header-height:3rem;
+	--gap-size:1rem;
+	--container-width:1000px;
 
-</body>
-</html>
+	--font-serif:Georgia, "Times New Roman", serif;
+	--font-sans:Helvetica, arial, sans-serif;
+}
+
+body {
+	margin:0;
+	font-size:100%;
+	font-family:var(--font-sans);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family:var(--font-serif);
+}
+
+a {
+	display:inline-block;
+	color:inherit;
+	font-weight:bold;
+	text-decoration:none;
+}
+
+
+
+
+
+
+/* Small Classes */
+
+.container {
+	max-width:var(--container-width);
+	margin-right: auto;
+	margin-left: auto;
+}
+.hidden { display:none; }
+
+
+
+/* Layout Classes */
+
+.display-flex { display:flex; }
+.display-inline-flex { display:inline-flex; }
+.display-block { display:block; }
+.display-inline-block { display:inline-block; }
+
+.flex-stretch { flex: 1 1 auto; }
+.flex-none { flex: none; }
+
+.flex-justify-center { justify-content:center; }
+.flex-align-center { align-items:center; }
+
+
+
+
+
+
+[data-role="header"] ul,
+[data-role="footer"] ul,
+.nav ul {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+}
+
+.center-child {
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+}
 
 
 
@@ -120,51 +102,62 @@
 
 
 
+.ui-mobile .ui-page-active {
+	display:flex;
+	flex-direction:column;
 
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	overflow:hidden;
+}
+[data-role="main"] {
+	flex: 1 1 100%;
+	overflow:hidden;
+	position:relative;
+	background-color:white;
+	z-index:1;
+}
+[data-role="header"],
+[data-role="footer"] {
+	flex: none;
+	overflow:hidden;
+	position:relative;
+	line-height: var(--header-height);
+	border-width:0;
+	background-color:white;
+	box-shadow:0 0 5px rgba(0,0,0,0.2);
+	z-index:2;
+}
 
+[data-role="header"] ul,
+[data-role="footer"] ul {
+	display:flex;
+	position:relative;
+}
 
+[data-role="footer"] li {
+	flex:1 1 auto;
+	text-align:center;
+}
 
+.ui-header .ui-title {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	text-align:center;
+	padding:0;
+	margin:0;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+[data-role="header"] a {
+	display:block;
+	padding:0 1em;
+}
 
 
 

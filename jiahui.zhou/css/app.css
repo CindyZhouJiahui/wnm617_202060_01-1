@@ -9,9 +9,9 @@
    --color-neutral-medium: #9aa2a4;
    --color-neutral-dark: #363c3e;
 
-	--color-main-light: ##65c8D0;
+	--color-main-light: #65c8D0;
 	--color-main-medium: #29abe2;
-	--color-main-dark: ##0d56f2;
+	--color-main-dark: #0d56f2;
 
    --color-white: #fff;
    --color-black: #000;
@@ -119,6 +119,7 @@ a {
 	position:relative;
 	background-color:white;
 	z-index:1;
+	color:;
 }
 [data-role="header"],
 [data-role="footer"] {

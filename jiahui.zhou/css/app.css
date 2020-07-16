@@ -2,6 +2,8 @@
 
 *,*::before,*::after {
 	box-sizing:border-box;
+	background-color: #67abff;
+	text-align: center;
 }
 
 :root {
@@ -153,11 +155,20 @@ a {
 	text-align:center;
 	padding:0;
 	margin:0;
+	
 }
 
 [data-role="header"] a {
 	display:block;
 	padding:0 1em;
+}
+
+
+
+#signin-page{
+	background-color:#29abe2;
+	width:100%;
+	height:100%;
 }
 
 

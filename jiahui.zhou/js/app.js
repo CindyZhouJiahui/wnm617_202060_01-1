@@ -5,6 +5,17 @@ $(()=>{
 	// EVENT DELEGATION
 	$(document)
 
+	// Routing//
+	.on("pagecontainerbeforeshow",function(e,ui){
+		switch(ui.toPage[0].id){
+			case "recent-page":
+			console.log("Recent")
+			break;
+			case "list-page": ListPage();break;
+	}
+})
+
+		
 
 	// FORM SUBMISSIONS
 	.on("submit","#signin-form",function(e){

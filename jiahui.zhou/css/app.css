@@ -2,7 +2,6 @@
 
 *,*::before,*::after {
 	box-sizing:border-box;
-	background-color: #67abff;
 	text-align: center;
 }
 

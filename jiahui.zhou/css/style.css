@@ -24,7 +24,7 @@ body{
 	margin: 0;
 	font-size: 100%;
 	font-family:var(--font-sans);
-	background-color: var(--color-neutral-medium);
+	text-align: center;
 }
 
 h1,

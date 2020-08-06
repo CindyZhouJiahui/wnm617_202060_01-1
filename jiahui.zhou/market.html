@@ -2,65 +2,53 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>market %</title>
+	<title>Market %</title>
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<link rel="stylesheet" href="lib/css/jquery.mobile.structure-1.4.5.min.css">
-
-	<script src="lib/js/jquery-2.2.4.min.js"></script>
-	
 	<script src="lib/js/jquery.mobile-1.4.5.min.js"></script>
-	
+	<link rel="stylesheet"  href="css/styleguide.css">
+	<script src="lib/js/jquery-2.2.4.min.js"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+		
 </head>
 <body>
-	<section data-role="page" id="page1">
 
-	<header data-role="header">
-		<h1>Header</h1>
-	</header>
-	<div data-role="main">
-		<h2>This page</h2>
-		<ul>
-			<li><a href="#page2">page two</a></li>
-			<li><a href="#page3">page three</a></li>
-		</ul>
+	<!--signin page-->
+	<div class="main-page">
+	<div class="flex-none" style="text-align: center;">
+	<img src="img/market logo.png">
+	<form>
+		<div class="formsheet">
+		<p>User name</p>
+		<input type="text" placeholder="Enter your name">
+		<p>Password</p>
+		<input type="text" placeholder="Enter your password">
 	</div>
-	<footer data-role="footer">
-		<h1>footer</h1>
-	</footer>
-	</section>
-
-	<section data-role="page" id="page2">
-	<header data-role="header">
-		<h1>Header</h1>
-	</header>
-	<div data-role="main">
-		<h2>This page</h2>
-	<ul>
-			<li><a href="#page1">page one</a></li>
-			<li><a href="#page3">page three</a></li>
-		</ul>
-		</div>
-	<footer data-role="footer">
-		<h1>footer</h1>
-	</footer>
-	</section>
-
-	<section data-role="page" id="page3">
-	<header data-role="header">
-		<h1>Header</h1>
-		<a href="#" data-rel= back>Back</a>
-	</header>
-	<div data-role="main">
-		<h2>This is also a page</h2>
-		</div>
-	</section>
-
+	</form>
+	</div>
+	</div>
 
 
 
 	
-	
-
-
+<!---list page--->
+<section data-role="page" id="list-page">
+	<div class="container">
+		<div class="flex-none" style="text-align: center;">
+		<h2>Market Lists</h2>
+		<div class="card market lists">
+		<img src="img/Blueberry image 02.png" style="height: 100px; width: 100px;">
+	</div>
+		<dd>fruit</dd>
+		<dt>Market 2</dt>
+		<dd>flower</dd>
+		<dt>Market 3</dt>
+		<dd>vegetable</dd>
+		<dt>Market 4</dt>
+		<dd>honey</dd>
+	</dl>
+		</div>
+	</div>
+</section>
+</div>
 </body>
 </html>

@@ -1,0 +1,14 @@
+
+
+*{
+	font-family: 'Playfair Display', serif;
+}
+body{
+	margin: 0;
+}
+}
+.accordion dt{
+	background-color: #4e70b1;
+	color: white;
+	border-radius: 10px;
+}

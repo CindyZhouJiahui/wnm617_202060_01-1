@@ -3,33 +3,71 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Market %</title>
+
+	<!--- response--->
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<script src="lib/js/jquery.mobile-1.4.5.min.js"></script>
+
+	<!--LIB CODE FIRST-->
+	<link rel="stylesheet" href="lib/css/jquery.mobile.structure-1.4.5.min.css">
 	<link rel="stylesheet"  href="css/styleguide.css">
+
 	<script src="lib/js/jquery-2.2.4.min.js"></script>
+	<script type="js/app.js"></script>
+
+	<script src="lib/js/jquery.mobile-1.4.5.min.js"></script>
 	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
 		
 </head>
 <body>
 
+
 	<!--signin page-->
-	<div class="main-page">
-	<div class="flex-none" style="text-align: center;">
-	<img src="img/market logo.png">
-	<form>
-		<div class="formsheet">
-		<p>User name</p>
-		<input type="text" placeholder="Enter your name">
-		<p>Password</p>
-		<input type="text" placeholder="Enter your password">
+	<section data-role="page" id="signin-page">
+	<!---signin main page part-->
+		<div data-role="main">
+			<div class="flex-none" style="text-align: center;">
+			<img src="img/market logo.png">
+			<form id="signin-form" data-ajax="false" class="first-form">
+			<div class="form-control">
+
+				<label for="signin-username" class="form-label">Username</label>
+				<input type="text" class="form-input" id="signin-username" placeholder="Type your username" data-role="none">
+
+				<label for="signin-password" class="form-label">Password</label>
+				<input type="password" class="form-input" id="signin-username" placeholder="Type your password" data-role="none">
+
+			<div class="form-control">
+				<input type="submit" class="form-button" value="Sign In" data-role="none">
+				<a href="#recent-page">Navigate</a>
+			</div>
+				<div class="form-control">
+				<p></p>
+			</div>
+			</form>
+
+		
+	</section>
+
+
+	<!--signup page-->
+	<section data-role="page" id="signup-page"></section>
+
+<!---recent page--->
+<section data-role="page" id="recent-page">
+	<div data-role="main">
+		Map
 	</div>
-	</form>
-	</div>
-	</div>
+	<footer data-role="footer">
+		<ul>
+			<li><a href="#">Recent</a></li>
+			<li><a href="#">List</a></li>
+			<li><a href="#">Profile</a></li>
+		</ul>
+	</footer>
+</section>
 
 
 
-	
 <!---list page--->
 <section data-role="page" id="list-page">
 	<div class="container">
@@ -49,6 +87,25 @@
 		</div>
 	</div>
 </section>
-</div>
+
+
+
+<!---market profile page-->
+<section data-role="page" id="market-profile-page">
+
+
+
+
+
+</section>
+
+<!---user profile page-->
+<section data-role="page" id="user-page">
+
+
+
+</section>
+
+
 </body>
 </html>

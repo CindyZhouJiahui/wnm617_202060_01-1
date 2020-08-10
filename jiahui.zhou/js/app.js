@@ -11,7 +11,7 @@ $(()=>{
 			case "recent-page":
 			console.log("Recent")
 			break;
-			case "list-page": ListPage();break;
+			case "list-page": ListPage(); break;
 	}
 })
 

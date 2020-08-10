@@ -1,13 +1,27 @@
+
+
 const makemarketList = templater(o=>`
-<div class="marketlist-item display-flex market-jump" data-id="${o.id}">
-	<div class="flex-none"><img src="${o.img}" alt="" class="list-image" /></div>
-	<div class="flex-stretch marketlist-body">
-		<div>${o.name}</div>
-		<div>${o.type}</div>
-		<div>${o.breed}</div>
-	</div>
-</div>
+	<li class="market-item"><a href="#market ${o.id}">${o.name}</a></li>
 `);
+
+const makemarketItem = templater(o => `
+	<section data-role="page" id="market ${o.id}">
+		<header data-role="header">
+			<img src="${o.img}">
+			<ul>
+				<li class="flex-none">
+					<a href="#" data-rel="back">Back</a>
+				</li>
+			</ul>
+		</header>
+		<div data-role="main">
+			${o.description}
+		</div>
+		<div data-role="footer">
+			<p>${o.products.join(",")}</p>
+		</div>
+	</section>
+`)
 
 
 

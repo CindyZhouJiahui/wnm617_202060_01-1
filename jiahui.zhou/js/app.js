@@ -8,19 +8,26 @@ $(()=>{
 	// Routing//
 	.on("pagecontainerbeforeshow",function(e,ui){
 		switch(ui.toPage[0].id){
-			case "recent-page":
-			console.log("Recent")
-			break;
-			case "list-page": ListPage(); break;
+			case "recent-page":{
+				console.log("Recent")
+			}break;
+			case "list-page": {
+				console.log("List-Page");
+				ListPage();
+			}break;
+			case "profile-page": {
+				console.log("Profile-Page");
+			}
 	}
 })
 
-		
+
 
 	// FORM SUBMISSIONS
 	.on("submit","#signin-form",function(e){
 		e.preventDefault();
-		checkLoginForm();
+		// checkLoginForm();
+		checkSigninForm();
 	})
 
 

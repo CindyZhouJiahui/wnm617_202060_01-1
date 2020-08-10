@@ -1,21 +1,13 @@
 
 const ListPage = async(d=0) => {
-	if(!d) d = await query({type:"market_by_user_id",params:[sessionStorage.userId]})
+	// 这里不做登录判断
+	// if(!d) d = await query({type:"market_by_user_id",params:[sessionStorage.userId]})
 
-	$("#list-page .animallist").html(
-		d.result.length ?
-			makeAnimalList(d.result) :
-			"You need to add some animals, jack."
+	d = await market();
+	// $("body").html($("body").html()+makemarketItem(d.production));
+	$("#list-page .marketlist").html(
+			makemarketList(d.production)
 	);
-
-	$("#list-page .list-filters").html(listFilters(d.result));
-
-	$("#list-add-form .inputs").html(makeAnimalProfileInputs({
-		name:'',
-		type:'',
-		breed:'',
-		description:''
-	}))
 }
 
 
@@ -73,7 +65,7 @@ const marketProfilePage = async() => {
 
 	let market = await query({type:"market_by_id",params:[sessionStorage.animalId]})
 	let locations = await query({type:"locations_by_market_id",params:[sessionStorage.animalId]})
-	
+
 	$("#market-profile-page h1").html(animal.result[0].name)
 
 	$("#market-profile-page .profile-head").removeClass("active")

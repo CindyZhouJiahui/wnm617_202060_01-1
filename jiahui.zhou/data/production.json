@@ -1,0 +1,28 @@
+{
+  "production": [
+    {
+      "id": 1,
+      "name": "market1",
+      "description": "The first market",
+      "type": "flower",
+      "products":["rose"],
+      "img": "img/strawberries.jpg"
+    },
+    {
+      "id": 2,
+      "name": "market2",
+      "description": "The second market",
+      "type": "vegetables",
+      "products":["mushroom"],
+      "img": "img/strawberries.jpg"
+    },
+    {
+      "id": 3,
+      "name": "market3",
+      "description": "The first market",
+      "type": "fruit",
+      "products":["blueberry"],
+      "img": "img/strawberries.jpg"
+    }
+  ]
+}

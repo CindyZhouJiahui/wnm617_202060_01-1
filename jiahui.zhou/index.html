@@ -8,12 +8,11 @@
 
 	<link rel="stylesheet" href="lib/css/jquery.mobile.structure-1.4.5.min.css">
 	<link rel="stylesheet" href="css/app.css">
-	<link rel="stylesheet" href="css/index.css">
 
 	<script src="lib/js/jquery-2.2.4.min.js"></script>
 
 	<script src="js/signin.js"></script>
-	<script src="js/functions.js"></script>
+	<script src="js/fountions.js"></script>
 	<script src="js/parts.js"></script>
 	<script src="js/app.js"></script>
 	<script src="js/pages.js"></script>
@@ -112,19 +111,21 @@
 			<ul>
 				<li class="flex-stretch"></li>
 				<li class="flex-none">
-					<a href="#list-add-market-modal" data-rel="popup" data-activate="#list-add-market-modal">&plus;</a>
+					<a href="#" data-activate="#list-add-market-modal">&plus;</a>
 				</li>
 			</ul>
 		</header>
 		<div data-role="main">
 			<div class="scrollable">
+				
+				<ul>
 
-				<ul class="marketlist">
 					<li><a href="#market 1">market 1</a></li>
 					<li><a href="#market 2">market 2</a></li>
 					<li><a href="#market 3">market 3</a></li>
 					<li><a href="#market 4">market 4</a></li>
 					<li><a href="#market 5">market 5</a></li>
+		
 				</ul>
 			</div>
 		</div>
@@ -154,7 +155,6 @@
 								<label for="list-add-products" class="form-label">products</label>
 								<input type="text" class="form-input" id="list-add-products" placeholder="Type products" data-role="none">
 							</div>
-							<a href="#" data-role="button" @click="handleAddMarket" data-inline="true" style="box-shadow: 0px 0px 1px 3px gray;margin-top: 0.5em;">Add market</a>
 						</form>
 					</div>
 				</div>
@@ -162,95 +162,76 @@
 		</div>
 	</section>
 
-	  <section data-role="page" id="market 1">
+<section data-role="page" id="market 1">
 		<header data-role="header">
-			<img src="img/strawberries.jpg" style="width: 50%">
+			<img src="img/strawberries.jpg">
 			<ul>
 				<li class="flex-none">
 					<a href="#" data-rel="back">Back</a>
 				</li>
 			</ul>
 		</header>
-		<div data-role="main" class="market-description">
-			The first market
+		<div data-role="main">
+			Cool market
 		</div>
-			<div data-role="footer">
-				<p class="market-type">type:</p>
-				<p class="market-text">flower</p>
-				<p class="market-type">products:</p>
-				<p class="market-text">rose</p>
-			</div>
 	</section>
 
-		<section data-role="page" id="market 2">
-			<header data-role="header">
-				<img src="img/strawberries.jpg" style="width: 50%">
-				<ul>
-					<li class="flex-none">
-						<a href="#" data-rel="back">Back</a>
-					</li>
-				</ul>
-			</header>
-			<div data-role="main" class="market-description">
-				The second market
-			</div>
-			<div data-role="footer">
-				<p class="market-type">type:</p>
-				<p class="market-text">vegetables</p>
-				<p class="market-type">products:</p>
-				<p class="market-text">mushroom</p>
-			</div>
-		</section>
+	<section data-role="page" id="market 2">
+		<header data-role="header">
+			<img src="img/strawberries.jpg">
+			<ul>
+				<li class="flex-none">
+					<a href="#" data-rel="back">Back</a>
+				</li>
+			</ul>
+		</header>
+		<div data-role="main">
+			Cool market
+		</div>
+	</section>
 
-		<section data-role="page" id="market 3">
-			<header data-role="header">
-				<img src="img/strawberries.jpg" style="width: 50%">
-				<ul>
-					<li class="flex-none">
-						<a href="#" data-rel="back">Back</a>
-					</li>
-				</ul>
-			</header>
-			<div data-role="main" class="market-description">
-				The third market
-			</div>
-			<div data-role="footer">
-				<p class="market-type">type:</p>
-				<p class="market-text">fruit</p>
-				<p class="market-type">products:</p>
-				<p class="market-text">blueberry</p>
-			</div>
-		</section>
+	<section data-role="page" id="market 3">
+		<header data-role="header">
+			<img src="img/strawberries.jpg">
+			<ul>
+				<li class="flex-none">
+					<a href="#" data-rel="back">Back</a>
+				</li>
+			</ul>
+		</header>
+		<div data-role="main">
+			Cool market
+		</div>
+	</section>
 
-		<section data-role="page" id="market 4">
-			<header data-role="header">
-				<img src="img/strawberries.jpg" style="width: 50%">
-				<ul>
-					<li class="flex-none">
-						<a href="#" data-rel="back">Back</a>
-					</li>
-				</ul>
-			</header>
-			<div data-role="main">
-				Cool market
-			</div>
-		</section>
+	<section data-role="page" id="market 4">
+		<header data-role="header">
+			<img src="img/strawberries.jpg">
+			<ul>
+				<li class="flex-none">
+					<a href="#" data-rel="back">Back</a>
+				</li>
+			</ul>
+		</header>
+		<div data-role="main">
+			Cool market
+		</div>
+	</section>
 
-		<section data-role="page" id="market 5">
-			<header data-role="header">
-				<ul>
-					<li class="flex-none">
-						<a href="#" data-rel="back">Back</a>
-					</li>
-				</ul>
-			</header>
-			<img src="img/strawberries.jpg" style="width: 50%">
-			</header>
-			<div data-role="main">
-				Cool market
-			</div>
-		</section>
-
+	<section data-role="page" id="market 5">
+		<header data-role="header">
+			<ul>
+				<li class="flex-none">
+					<a href="#" data-rel="back">Back</a>
+				</li>
+			</ul>
+		</header>
+			<img src="img/strawberries.jpg">
+		</header>
+		<div data-role="main">
+			Cool market
+		</div>
+	</section>
 
 
 
